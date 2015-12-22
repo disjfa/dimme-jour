@@ -1,0 +1,198 @@
+#: 404.php:10
+msgid "Page not found"
+msgstr "Pagina niet gevonden"
+
+#: 404.php:14
+msgid "Looks like something went completely wrong"
+msgstr "Er is wat mis gegaan"
+
+#: 404.php:18
+msgid "Please try another section of our awesome page"
+msgstr "Probeer wat anders op te zoeken op onze geweldige website"
+
+#: comments.php:5
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Deze post is afgeschermd met een wachtwoord. Vul deze in."
+
+#: comments.php:17
+msgid "Comments"
+msgstr "Reacties"
+
+#: comments.php:30
+msgid "&laquo; Older Comments"
+msgstr "&laquo; Oudere Reacties"
+
+#: comments.php:31
+msgid "Newer Comments &raquo;"
+msgstr "Nieuwere Reacties &raquo;"
+
+#. translators: %s: Name of current post
+#: content-front-page.php:27 content.php:33
+msgid "Continue reading %s"
+msgstr "Lees verder over %s"
+
+#: content-none.php:3
+msgid "No posts found."
+msgstr "Geen items gevonden."
+
+#: footer.php:29
+msgid "Design by <a href=\"http://isset.nl/\">isset</a>"
+msgstr "Ontworpen door <a href=\"http://isset.nl/\">isset</a>"
+
+#: footer.php:33
+msgid "Powered by WordPress"
+msgstr "Aangestuurd door WordPress"
+
+#: functions.php:28
+msgid "Main Menu"
+msgstr "Hoofd menu"
+
+#: functions.php:53
+msgid "Frontpage logo"
+msgstr "Logo op de voorpagina"
+
+#: functions.php:64
+msgid "Menu logo"
+msgstr "Logo in het menu"
+
+#: functions.php:81
+msgid "Add New Item"
+msgstr "Maak een nieuw item aan"
+
+#: functions.php:82
+msgid "New Item"
+msgstr "Nieuw item"
+
+#: functions.php:83
+msgid "Edit Item"
+msgstr "Bewerk item"
+
+#: functions.php:84
+msgid "View Item"
+msgstr "Bekijk item"
+
+#: functions.php:85
+msgid "All Items"
+msgstr "Alle items"
+
+#: functions.php:86
+msgid "Search Front Page"
+msgstr "Zoeken"
+
+#: functions.php:87
+msgid "No items found."
+msgstr "Geen items gevonden."
+
+#: functions.php:88
+msgid "No items found in Trash."
+msgstr "Er zitten geen items in de Verwijderde items"
+
+#: functions.php:93
+msgid "Items on the front page."
+msgstr "Items op de voorpagina"
+
+#: functions.php:219
+msgid "Default Sidebar"
+msgstr "Algemene sidebar"
+
+#: functions.php:220
+msgid "Used on every page."
+msgstr "Gebruikt op elke pagina."
+
+#: functions.php:331 functions.php:357
+msgid "Edit"
+msgstr "Bewerk"
+
+#: functions.php:353
+msgid "Leave a comment"
+msgstr "Laat een reactie achter"
+
+#: functions.php:353
+msgid "1 Comment"
+msgstr "1 Reactie"
+
+#: functions.php:353
+msgid "% Comments"
+msgstr "% Reacties"
+
+#: functions.php:370
+msgid "Older posts"
+msgstr "Oudere posts"
+
+#: functions.php:371
+msgid "Newer posts"
+msgstr "Nieuwere posts"
+
+#: header.php:26
+msgid "Navigation"
+msgstr "Navigatie"
+
+#: image.php:42
+msgid "&laquo; Previous"
+msgstr "&laquo; Vorige"
+
+#: image.php:43
+msgid "Next &raquo;"
+msgstr "Volgende &raquo;"
+
+#: searchform.php:4 searchform.php:6
+msgid "Search"
+msgstr "Zoeken"
+
+#: single.php:12
+msgid "Previous Post"
+msgstr "Vorige Post"
+
+#: single.php:13
+msgid "Next Post"
+msgstr "Volgende Post"
+
+#. Theme Name of the plugin/theme
+msgid "Your appic"
+msgstr "Your appic"
+
+#. Description of the plugin/theme
+msgid "Theme for your appic."
+msgstr "Thema voor your appic."
+
+#. Author of the plugin/theme
+msgid "Casper Houde"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://isset.nl"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Full Width Page"
+msgstr "Pagina met 100% breedte"
+
+#: functions.php:76
+msgctxt "post type general name"
+msgid "Front page"
+msgstr "Voorpagina"
+
+#: functions.php:77
+msgctxt "post type singular name"
+msgid "Front page item"
+msgstr "Voorpagina item"
+
+#: functions.php:78
+msgctxt "admin menu"
+msgid "Front page"
+msgstr "Voorpagina"
+
+#: functions.php:79
+msgctxt "add new on admin bar"
+msgid "Book"
+msgstr "Item"
+
+#: functions.php:80
+msgctxt "book"
+msgid "Add New"
+msgstr "Nieuwe toevoegen"
+
+#: search.php:4
+msgctxt "label"
+msgid "Search for:"
+msgstr "Zoeken op:"

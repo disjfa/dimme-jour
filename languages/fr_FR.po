@@ -1,0 +1,232 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: dimme-jour\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2015-11-27 14:00:16+00:00\n"
+"PO-Revision-Date: 2015-10-20 09:57+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: __;_e;_x;_ex;_n;_nx\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:10
+msgid "Page not found"
+msgstr "Page non trouvée"
+
+#: 404.php:14
+msgid "Looks like something went completely wrong"
+msgstr ""
+
+#: 404.php:18
+msgid "Please try another section of our awesome page"
+msgstr ""
+
+#: comments.php:5
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+"Cet article est protégé par un mot de passe. Entrez le mot de passe pour "
+"voir les commentaires."
+
+#: comments.php:17
+msgid "Comments"
+msgstr "Commentaires"
+
+#: comments.php:30
+msgid "&laquo; Older Comments"
+msgstr "&laquo; Commentaires plus anciens"
+
+#: comments.php:31
+msgid "Newer Comments &raquo;"
+msgstr "Commentaires plus récents &raquo;"
+
+#. translators: %s: Name of current post
+#: content-front-page.php:27 content.php:33
+msgid "Continue reading %s"
+msgstr ""
+
+#: content-none.php:3
+msgid "No posts found."
+msgstr "Aucun article trouvé."
+
+#: footer.php:29
+#, fuzzy
+msgid "Design by <a href=\"http://isset.nl/\">isset</a>"
+msgstr "Design par <a href=\"https://github.com/nicolas-van\">@nicolas-van</a>"
+
+#: footer.php:33
+msgid "Powered by WordPress"
+msgstr "Propulsé par Wordpress"
+
+#: functions.php:28
+msgid "Main Menu"
+msgstr "Menu principal"
+
+#: functions.php:53
+msgid "Frontpage logo"
+msgstr ""
+
+#: functions.php:64
+msgid "Menu logo"
+msgstr ""
+
+#: functions.php:81
+msgid "Add New Item"
+msgstr ""
+
+#: functions.php:82
+msgid "New Item"
+msgstr ""
+
+#: functions.php:83
+#, fuzzy
+msgid "Edit Item"
+msgstr "Modifier"
+
+#: functions.php:84
+msgid "View Item"
+msgstr ""
+
+#: functions.php:85
+msgid "All Items"
+msgstr ""
+
+#: functions.php:86
+msgid "Search Front Page"
+msgstr ""
+
+#: functions.php:87
+msgid "No items found."
+msgstr "Aucun élément trouvé."
+
+#: functions.php:88
+#, fuzzy
+msgid "No items found in Trash."
+msgstr "Aucun élément trouvé."
+
+#: functions.php:93
+#, fuzzy
+msgid "Items on the front page."
+msgstr "Utilisé sur toutes les pages."
+
+#: functions.php:219
+#, fuzzy
+msgid "Default Sidebar"
+msgstr "Sidebar de gauche"
+
+#: functions.php:220
+msgid "Used on every page."
+msgstr "Utilisé sur toutes les pages."
+
+#: functions.php:331 functions.php:357
+msgid "Edit"
+msgstr "Modifier"
+
+#: functions.php:353
+msgid "Leave a comment"
+msgstr "Laissez un commentaire"
+
+#: functions.php:353
+msgid "1 Comment"
+msgstr "1 commentaire"
+
+#: functions.php:353
+msgid "% Comments"
+msgstr "% commentaires"
+
+#: functions.php:370
+msgid "Older posts"
+msgstr "Articles plus anciens"
+
+#: functions.php:371
+msgid "Newer posts"
+msgstr "Articles plus récents"
+
+#: header.php:26
+msgid "Navigation"
+msgstr "Navigation"
+
+#: image.php:42
+msgid "&laquo; Previous"
+msgstr "&laquo; Précédent"
+
+#: image.php:43
+msgid "Next &raquo;"
+msgstr "Suivant &raquo;"
+
+#: searchform.php:4 searchform.php:6
+msgid "Search"
+msgstr "Recherche"
+
+#: single.php:12
+msgid "Previous Post"
+msgstr "Article précédent"
+
+#: single.php:13
+msgid "Next Post"
+msgstr "Article suivant"
+
+#. Theme Name of the plugin/theme
+msgid "Your appic"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Theme for your appic."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Casper Houde"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://isset.nl"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Full Width Page"
+msgstr ""
+
+#: functions.php:76
+msgctxt "post type general name"
+msgid "Front page"
+msgstr ""
+
+#: functions.php:77
+msgctxt "post type singular name"
+msgid "Front page item"
+msgstr ""
+
+#: functions.php:78
+msgctxt "admin menu"
+msgid "Front page"
+msgstr ""
+
+#: functions.php:79
+msgctxt "add new on admin bar"
+msgid "Book"
+msgstr ""
+
+#: functions.php:80
+msgctxt "book"
+msgid "Add New"
+msgstr ""
+
+#: search.php:4
+#, fuzzy
+msgctxt "label"
+msgid "Search for:"
+msgstr "Rechercher:"
+
+#~ msgid "No pages found."
+#~ msgstr "Aucune page trouvée."
+
+#~ msgid "Right Sidebar"
+#~ msgstr "Sidebar de droite"
+
+#~ msgid "Footer"
+#~ msgstr "Footer"

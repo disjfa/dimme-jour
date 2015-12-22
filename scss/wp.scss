@@ -1,0 +1,400 @@
+/*
+    This file defines a lot of style necessary to make Wordpress work
+    correctly.
+
+    It is not recommended to edit it unless you know exactly what you
+    are doing.
+*/
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+#content-wrapper {
+  background: #FBFBFB;
+}
+
+#main {
+  background: #FBFBFB;
+}
+
+.container {
+  .container {
+    width: auto;
+  }
+}
+
+.navbar-spacer {
+  //height: $navbar-height;
+}
+
+.navbar {
+  border: 0;
+  @include box-shadow(0 0 10px $gray-dark);
+  .navbar-brand {
+    font-weight: bold;
+    padding: 0 $navbar-padding-horizontal;
+    color: #FFF;
+    //line-height: $navbar-height;
+  }
+  .navbar-nav {
+    > li {
+      > a {
+        border-top: $navbar-border solid transparent;
+        border-bottom: $navbar-border solid transparent;
+      }
+      &.active {
+        a {
+          border-color: $color-concrete;
+        }
+      }
+    }
+  }
+}
+
+.post-header {
+  background-size: cover;
+  padding-bottom: 25%;
+  position: relative;
+}
+
+@mixin bg-color($background, $foreground, $links) {
+  background: $background;
+  color: $foreground;
+  a:not(.btn) {
+    color: $links;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: $links;
+  }
+  table {
+    background: lighten($background, 2%);
+    border-color: lighten($background, 10%);
+    tbody, thead {
+      td, th {
+        border-color: lighten($background, 5%);
+      }
+    }
+  }
+}
+
+.bg-white {
+  @include bg-color(#FFF, inherit, inherit);
+}
+
+.bg-concrete {
+  @include bg-color($color-concrete, #fff, $color-midnight-blue);
+}
+
+.bg-green-sea {
+  @include bg-color($color-green-sea, #fff, $color-concrete);
+}
+
+.bg-belize-hole {
+  @include bg-color($color-belize-hole, #fff, $color-concrete);
+}
+
+.bg-pommegenade {
+  @include bg-color($color-pommegenade, #fff, $color-concrete);
+}
+
+.bg-midnight-blue {
+  @include bg-color($color-midnight-blue, #fff, $color-concrete);
+}
+
+@mixin link-without-style() {
+  a {
+    color: inherit;
+    text-decoration: none;
+    &:hover, &:focus {
+      text-decoration: none;
+      color: $link-hover-color;
+    }
+  }
+}
+
+/* post styling */
+.main-container {
+  background-size: cover;
+  background-position: center center;
+}
+
+#main > div > article {
+
+  header {
+    @include link-without-style();
+    .meta {
+      @include link-without-style();
+      margin-bottom: 20px;
+    }
+  }
+
+  section {
+    @include clearfix();
+    img {
+      @include img-responsive();
+      width: auto;
+
+      &.alignleft {
+        @include pull-left();
+        margin-right: 10px;
+      }
+
+      &.alignright {
+        @include pull-right();
+        margin-left: 10px;
+      }
+
+      &.aligncenter {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    .wp-video {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.tags {
+  a {
+    @extend .label;
+    @extend .label-default;
+  }
+}
+
+.commentlist {
+  @extend .list-unstyled;
+
+  .children {
+    @extend .list-unstyled;
+    margin-left: 20px;
+  }
+
+  .comment-body {
+    padding: 30px 0;
+    border-bottom: 1px solid $hr-border-color;
+
+    .edit-link a {
+      &::before {
+        content: "\270f";
+        @extend .glyphicon;
+        padding-right: 3px;
+      }
+      @extend .text-muted;
+      text-decoration: none;
+      &:hover, &:focus {
+        text-decoration: none;
+        color: $link-hover-color;
+      }
+    }
+  }
+
+  .comment .comment-body {
+    & > * {
+      padding-left: 50px;
+      position: relative;
+      .avatar {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 2px;
+        position: absolute;
+        left: 0;
+        height: 34px;
+        top: 2px;
+        width: 34px;
+      }
+    }
+    .comment-author {
+      margin-bottom: 5px;
+      @include link-without-style();
+      .fn {
+        font-weight: bold;
+      }
+    }
+    .comment-metadata {
+      margin-bottom: 5px;
+      @include link-without-style();
+      @extend .text-muted;
+
+      & > a {
+        &::before {
+          content: "\e023";
+          padding-right: 3px;
+        }
+      }
+    }
+    .reply a {
+      &::before {
+        content: "\e095";
+        padding-right: 3px;
+      }
+    }
+  }
+}
+
+.comment-navigation {
+  @extend .list-inline;
+  & > li {
+    padding: 0;
+    & > a {
+      padding: 0 5px;
+    }
+  }
+}
+
+.comment-form {
+  .comment-form-author,
+  .comment-form-email,
+  .comment-form-url,
+  .comment-form-comment {
+    @extend .form-group;
+
+    input,
+    textarea {
+      @extend .form-control;
+    }
+
+    textarea {
+      height: auto;
+    }
+  }
+  .form-allowed-tags {
+    code {
+      white-space: normal;
+      color: $text-color;
+      background-color: transparent;
+    }
+  }
+  input[type='submit'] {
+    @extend .btn;
+    @extend .btn-primary;
+  }
+}
+
+/* visual form */
+.visual-form-builder-container {
+  h3 {
+    margin: 0;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    line-height: $line-height * 1.5;
+  }
+}
+
+/* widget styles */
+
+.widget {
+  margin-bottom: 38px;
+  &:last-of-type {
+    margin-bottom: 18px;
+  }
+}
+
+.widgettitle {
+  margin-bottom: 9px;
+}
+
+.tagcloud {
+  a {
+    @extend .label;
+    @extend .label-default;
+  }
+}
+
+/* calendar widget */
+
+.widget_calendar {
+  > div {
+    @extend .table-responsive;
+  }
+  table {
+    td, th {
+      text-align: center;
+    }
+    width: 100%;
+    line-height: $line-height*2;
+    color: #FFF;
+    a {
+      display: block;
+      &:hover {
+        background: $color-concrete;
+      }
+    }
+    caption {
+      font-weight: bold;
+    }
+  }
+}
+
+/* widgets */
+
+.vertical-nav {
+  .widget ul {
+    @extend .list-unstyled;
+    li {
+      @include link-without-style();
+      padding: 5px 0;
+      border-bottom: 1px solid $hr-border-color;
+      &:last-of-type {
+        border-bottom: 0;
+      }
+      ul {
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+#inner-footer {
+  background-color: $footer-bg;
+  padding-top: $footer-padding;
+  padding-bottom: ($footer-padding - $spacer);
+  border-top: 1px solid $navbar-default-border;
+}
+
+/* a style used for all headers */
+.article-header {
+  padding-bottom: (($line-height / 2) - 1);
+  margin-bottom: $line-height;
+  //todo border-bottom: 1px solid $page-he;
+  .has-post-thumbnail & {
+    border-bottom: none;
+  }
+}
+
+/* just a little style to remove spacing on the pager */
+
+.pager-unspaced {
+  margin: 0 0 $spacer 0;
+}
+
+/* empty styles to please wordpress theme checker */
+
+.wp-caption { /**/
+}
+
+.wp-caption-text { /**/
+}
+
+.sticky { /**/
+}
+
+.gallery-caption { /**/
+}
+
+.bypostauthor { /**/
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}

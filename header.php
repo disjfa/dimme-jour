@@ -10,15 +10,25 @@
 </head>
 <?php
 $options = get_option('dimme_jour_options');
+if (is_singular() && has_post_thumbnail()) {
+    $image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'dimme_jour_featured', false);
+    if ($image) {
+        list($header_image, $width, $height) = $image;
+    } else {
+        $header_image = false;
+    }
+} else {
+    $header_image = get_header_image();
+}
+
 ?>
 <body <?php body_class(); ?>>
 
 <div id="content-wrapper">
-    <header<?php echo is_front_page() ? ' class="is-front-page"' : ''; ?>>
+    <header<?php echo is_front_page() && display_header_text() ? ' class="is-front-page"' : ''; ?>>
         <nav class="navbar navbar-default navbar-fixed-top">
-            <?php if (is_admin_bar_showing()) echo '<div style="min-height: 28px;"></div>'; ?>
+            <?php if (is_admin_bar_showing()) echo '<div class="nav-show-admin-bar"></div>'; ?>
             <div class="container">
-
                 <div class="navbar-header">
                     <?php if (has_nav_menu("main_nav")): ?>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -49,25 +59,15 @@ $options = get_option('dimme_jour_options');
             </div>
         </nav>
     </header>
-    <?php if (is_front_page()): ?>
+    <?php if (is_front_page() && display_header_text()) : ?>
+    <?php elseif ($header_image): ?>
+        <div class="post-header" style="background-image: url(<?php echo $header_image; ?>);">
 
-    <?php elseif (is_singular() && has_post_thumbnail()): ?>
-        <?php
-        $image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'dimme_jour_featured', false);
-        if ($image):
-            list($src, $width, $height) = $image;
-            ?>
-            <div class="post-header" style="background-image: url(<?php echo $src; ?>);">
-
-            </div>
-            <?php
-        endif;
-        ?>
+        </div>
     <?php else: ?>
         <nav class="navbar-spacer">
             &nbsp;
         </nav>
-
     <?php endif; ?>
 
 

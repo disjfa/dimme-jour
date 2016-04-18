@@ -60,21 +60,3 @@ html, body.home {
     }
   }
 }
-
-.front-page {
-  padding: 70px 0;
-
-  h1, h2 {
-    text-align: center;
-  }
-  &.format-aside {
-    margin-bottom: 200px;
-  }
-  .aside-image {
-    height: 150px;
-    text-align: center;
-    img {
-      max-width: 90%;
-    }
-  }
-}

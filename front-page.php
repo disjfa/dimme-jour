@@ -1,47 +1,30 @@
 <?php
 get_header();
 $loop_the_loop = true;
-$show_blog_info = true;
+$options = get_option('dimme_jour_options');
 ?>
-    <div class="site-header" style="background-image: url(<?php echo header_image(); ?>);">
+<?php if (display_header_text()) : ?>
+    <div class="site-header"<?php if (isset($options['logo'])) : ?> style="background-image: url(<?php echo  $options['logo']; ?>);"<?php endif; ?>>
         <div class="site-header-body">
-            <?php if (is_singular()): ?>
-                <?php
-                the_post();
-                $loop_the_loop = false;
-
-                $content = get_the_content();
-                if ($content != '') {
-                    $show_blog_info = false;
-                }
-                ?>
-            <?php endif; ?>
-            <?php if ($show_blog_info): ?>
-                <?php if (isset($options['logo'])): ?>
-                    <br>
-                    <img src="<?php echo $options['logo']; ?>" alt="<?php echo get_bloginfo('name', 'display') ?>"
-                         class="site-header-logo">
-                <?php else: ?>
-                    <h1>
-                        <?php echo get_bloginfo('name', 'display') ?>
-                    </h1>
-                <?php endif; ?>
+            <h1>
+                <?php echo get_bloginfo('name', 'display') ?>
+            </h1>
+            <p>
+                <?php echo get_bloginfo('description', 'display') ?>
+            </p>
+            <?php if (get_query_var('paged')): ?>
+            <?php else: ?>
                 <p>
-                    <?php echo get_bloginfo('description', 'display') ?>
+                    <a href="#main"
+                       class="btn btn-lg btn-primary"><?php echo __('Go to the content', 'dimme-jour'); ?></a>
                 </p>
-                <?php if (get_query_var('paged')): ?>
-                <?php else: ?>
-                    <p>
-                        <a href="#main"
-                           class="btn btn-lg btn-primary"><?php echo __('Go to the content', 'dimme-jour'); ?></a>
-                    </p>
-                <?php endif; ?>
             <?php endif; ?>
         </div>
     </div>
     <a class="mouse-icon hidden-xs" href="#main">
         <div class="scroll"></div>
     </a>
+<?php endif; ?>
     <div id="main">
         <?php
         if ($loop_the_loop) {
@@ -54,8 +37,6 @@ $show_blog_info = true;
                 get_template_part('content', 'none');
             endif;
         }
-        get_template_part('dimme-jour-front', '');
-
         ?>
     </div>
 <?php

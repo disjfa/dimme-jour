@@ -1,17 +1,17 @@
-# Copyright (C) 2015 Casper Houde
+# Copyright (C) 2016 Casper Houde
 # This file is distributed under the MIT.
 msgid ""
 msgstr ""
 "Project-Id-Version: Dimme jour 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2015-12-01 22:07:46+00:00\n"
+"POT-Creation-Date: 2016-04-18 21:40:25+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"X-Generator: grunt-wp-i18n 0.5.3\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
 
 #: 404.php:10
 msgid "Page not found"
@@ -41,104 +41,80 @@ msgstr ""
 msgid "Newer Comments &raquo;"
 msgstr ""
 
-#: content-front-page.php:37 content.php:32
-#. translators: %s: Name of current post
-msgid "Continue reading %s"
-msgstr ""
-
 #: content-none.php:3
 msgid "No posts found."
 msgstr ""
 
-#: front-page.php:29
+#: content.php:32
+#. translators: %s: Name of current post
+msgid "Continue reading %s"
+msgstr ""
+
+#: front-page.php:19
 msgid "Go to the content"
 msgstr ""
 
-#: functions.php:28
+#: functions.php:38
 msgid "Main Menu"
 msgstr ""
 
-#: functions.php:35
+#: functions.php:45
 msgid "Pineapples"
 msgstr ""
 
-#: functions.php:61
+#: functions.php:76
 msgid "Frontpage logo"
 msgstr ""
 
-#: functions.php:72
+#: functions.php:88
 msgid "Menu logo"
 msgstr ""
 
-#: functions.php:89
-msgid "Add New Item"
+#: functions.php:155
+msgid "Footer 1"
 msgstr ""
 
-#: functions.php:90
-msgid "New Item"
+#: functions.php:164
+msgid "Footer 2"
 msgstr ""
 
-#: functions.php:91
-msgid "Edit Item"
+#: functions.php:173
+msgid "Footer 3"
 msgstr ""
 
-#: functions.php:92
-msgid "View Item"
-msgstr ""
-
-#: functions.php:93
-msgid "All Items"
-msgstr ""
-
-#: functions.php:94
-msgid "Search Front Page"
-msgstr ""
-
-#: functions.php:95
-msgid "No items found."
-msgstr ""
-
-#: functions.php:96
-msgid "No items found in Trash."
-msgstr ""
-
-#: functions.php:101
-msgid "Items on the front page."
-msgstr ""
-
-#: functions.php:233
+#: functions.php:182
 msgid "Default Sidebar"
 msgstr ""
 
-#: functions.php:234
+#: functions.php:183
 msgid "Used on every page."
 msgstr ""
 
-#: functions.php:345 functions.php:371
+#: functions.php:330 functions.php:356
 msgid "Edit"
 msgstr ""
 
-#: functions.php:367
+#: functions.php:352
 msgid "Leave a comment"
 msgstr ""
 
-#: functions.php:367
+#: functions.php:352
 msgid "1 Comment"
 msgstr ""
 
-#: functions.php:367
+#: functions.php:352
 msgid "% Comments"
 msgstr ""
 
-#: functions.php:384
+#: functions.php:372
 msgid "Older posts"
 msgstr ""
 
-#: functions.php:385
+#: functions.php:373
 msgid "Newer posts"
 msgstr ""
 
-#: header.php:26
+#: header.php:36
 msgid "Navigation"
 msgstr ""
 
@@ -166,8 +142,12 @@ msgstr ""
 msgid "Dimme jour"
 msgstr ""
 
+#. Theme URI of the plugin/theme
+msgid "http://jour.dimme.nl"
+msgstr ""
+
 #. Description of the plugin/theme
-msgid "Fullpage frontpage template."
+msgid "Full page template."
 msgstr ""
 
 #. Author of the plugin/theme
@@ -175,36 +155,11 @@ msgid "Casper Houde"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "http://dimme.nl"
+msgid "http://disjfa.nl"
 msgstr ""
 
 #. Template Name of the plugin/theme
 msgid "Page with sidebar"
-msgstr ""
-
-#: functions.php:84
-msgctxt "post type general name"
-msgid "Front page"
-msgstr ""
-
-#: functions.php:85
-msgctxt "post type singular name"
-msgid "Front page item"
-msgstr ""
-
-#: functions.php:86
-msgctxt "admin menu"
-msgid "Front page"
-msgstr ""
-
-#: functions.php:87
-msgctxt "add new on admin bar"
-msgid "Book"
-msgstr ""
-
-#: functions.php:88
-msgctxt "book"
-msgid "Add New"
 msgstr ""
 
 #: search.php:4

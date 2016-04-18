@@ -3,7 +3,7 @@ Theme Name: Dimme jour
 Description: Full page template.
 Author: Casper Houde
 Author URI: http://disjfa.nl
-Version: 0.1.0
+Version: 0.1.1
 Text Domain: dimme-jour
 Theme URI: http://jour.dimme.nl
 License: MIT
@@ -1126,7 +1126,10 @@ img {
 .thumbnail > img,
 .thumbnail a > img,
 .carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
+.carousel-inner > .item > a > img,
+.wp-caption > img,
+.wp-caption a > img,
+.wp-caption img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -6777,12 +6780,23 @@ body {
   color: #FFF;
   line-height: 60px;
 }
+.navbar .navbar-brand img {
+  max-height: 60px;
+}
 .navbar .navbar-nav > li > a {
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
 }
 .navbar .navbar-nav > li.active a {
   border-color: #95a5a6;
+}
+.nav-show-admin-bar {
+  height: 28px;
+}
+@media screen and (max-width: 782px) {
+  .nav-show-admin-bar {
+    height: 46px;
+  }
 }
 .post-header {
   background-size: cover;
@@ -7415,6 +7429,8 @@ fieldset[disabled] .comment-form input[type='submit'].focus {
   color: #2980b9;
   background-color: #ffffff;
 }
+/*
+
 /* visual form */
 .visual-form-builder-container h3 {
   margin: 0;
@@ -7626,6 +7642,109 @@ a.tagcloud a:focus {
   width: 1px;
   overflow: hidden;
 }
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+  margin: 5px 20px 20px 0;
+}
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wp-caption {
+  display: block;
+  padding: 4px;
+  margin-bottom: 22px;
+  line-height: 1.42857143;
+  background-color: #ecf0f1;
+  border: 1px solid #dddddd;
+  border-radius: 0;
+  -webkit-transition: border 0.2s ease-in-out;
+  -o-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
+}
+.wp-caption > img,
+.wp-caption a > img {
+  margin-left: auto;
+  margin-right: auto;
+}
+a.wp-caption:hover,
+a.wp-caption:focus,
+a.wp-caption.active {
+  border-color: #2980b9;
+}
+.wp-caption .caption {
+  padding: 9px;
+  color: #666666;
+}
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+.wp-caption img {
+  margin-left: auto;
+  margin-right: auto;
+}
+.wp-caption .wp-caption-text {
+  padding: 9px;
+  color: #666666;
+}
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
 /* front page */
 html,
 body.home {
@@ -7636,14 +7755,15 @@ html #content-wrapper,
 body.home #content-wrapper {
   height: 100%;
 }
-html .navbar.closed,
-body.home .navbar.closed {
+html .is-front-page .navbar.closed,
+body.home .is-front-page .navbar.closed {
   top: -60px;
 }
 html .site-header,
 body.home .site-header {
   width: 100%;
   height: 100%;
+  background-color: #AAA;
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -7694,23 +7814,6 @@ body.home.paged .site-header {
 html.paged .site-header .site-header-body,
 body.home.paged .site-header .site-header-body {
   bottom: 10%;
-}
-.front-page {
-  padding: 70px 0;
-}
-.front-page h1,
-.front-page h2 {
-  text-align: center;
-}
-.front-page.format-aside {
-  margin-bottom: 200px;
-}
-.front-page .aside-image {
-  height: 150px;
-  text-align: center;
-}
-.front-page .aside-image img {
-  max-width: 90%;
 }
 .mouse-icon {
   border: 2px solid #fff;

@@ -5,12 +5,15 @@ html, body.home {
   #content-wrapper {
     height: 100%;
   }
-  .navbar.closed {
-    top: -@navbar-height;
+  .is-front-page {
+    .navbar.closed {
+      top: -@navbar-height;
+    }
   }
   .site-header {
     width: 100%;
     height: 100%;
+    background-color: #AAA;
     background-size: cover;
     background-position: center center;
     position: relative;
@@ -53,24 +56,6 @@ html, body.home {
       .site-header-body {
         bottom: 10%;
       }
-    }
-  }
-}
-
-.front-page {
-  padding: 70px 0;
-
-  h1, h2 {
-    text-align: center;
-  }
-  &.format-aside {
-    margin-bottom: 200px;
-  }
-  .aside-image {
-    height: 150px;
-    text-align: center;
-    img {
-      max-width: 90%;
     }
   }
 }

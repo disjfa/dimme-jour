@@ -8,6 +8,7 @@
 
 body {
   -webkit-font-smoothing: antialiased;
+
 }
 
 #content-wrapper {
@@ -36,6 +37,9 @@ body {
     padding: 0 @navbar-padding-horizontal;
     color: #FFF;
     line-height: @navbar-height;
+    img {
+      max-height: @navbar-height;
+    }
   }
   .navbar-nav {
     > li {
@@ -49,6 +53,13 @@ body {
         }
       }
     }
+  }
+}
+
+.nav-show-admin-bar {
+  height: 28px;
+  @media screen and (max-width: 782px) {
+    height: 46px;
   }
 }
 
@@ -276,6 +287,8 @@ body {
   }
 }
 
+/*
+
 /* visual form */
 .visual-form-builder-container {
   h3 {
@@ -413,4 +426,100 @@ body {
   height: 1px;
   width: 1px;
   overflow: hidden;
+}
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+.alignright {
+  float:right;
+  margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.wp-caption {
+  .thumbnail();
+}
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+  &:extend(.img-responsive);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+  padding: @thumbnail-caption-padding;
+  color: @thumbnail-caption-color;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* Above WP toolbar. */
 }

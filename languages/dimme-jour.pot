@@ -2,9 +2,9 @@
 # This file is distributed under the MIT.
 msgid ""
 msgstr ""
-"Project-Id-Version: Dimme jour 0.1.0\n"
+"Project-Id-Version: Dimme jour 0.1.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2016-04-18 21:40:25+00:00\n"
+"POT-Creation-Date: 2016-04-20 21:44:07+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,31 +13,31 @@ msgstr ""
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: grunt-wp-i18n 0.5.4\n"
 
-#: 404.php:10
+#: 404.php:9
 msgid "Page not found"
 msgstr ""
 
-#: 404.php:14
+#: 404.php:13
 msgid "Looks like something went completely wrong"
 msgstr ""
 
-#: 404.php:18
+#: 404.php:17
 msgid "Please try another section of our awesome page"
 msgstr ""
 
-#: comments.php:5
+#: comments.php:4
 msgid "This post is password protected. Enter the password to view comments."
 msgstr ""
 
-#: comments.php:17
+#: comments.php:14
 msgid "Comments"
 msgstr ""
 
-#: comments.php:30
+#: comments.php:27
 msgid "&laquo; Older Comments"
 msgstr ""
 
-#: comments.php:31
+#: comments.php:28
 msgid "Newer Comments &raquo;"
 msgstr ""
 
@@ -45,7 +45,7 @@ msgstr ""
 msgid "No posts found."
 msgstr ""
 
-#: content.php:32
+#: content.php:33
 #. translators: %s: Name of current post
 msgid "Continue reading %s"
 msgstr ""
@@ -106,11 +106,11 @@ msgstr ""
 msgid "% Comments"
 msgstr ""
 
-#: functions.php:372
+#: functions.php:371
 msgid "Older posts"
 msgstr ""
 
-#: functions.php:373
+#: functions.php:372
 msgid "Newer posts"
 msgstr ""
 
@@ -118,11 +118,11 @@ msgstr ""
 msgid "Navigation"
 msgstr ""
 
-#: image.php:42
+#: image.php:34
 msgid "&laquo; Previous"
 msgstr ""
 
-#: image.php:43
+#: image.php:35
 msgid "Next &raquo;"
 msgstr ""
 
@@ -130,11 +130,11 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
-#: single.php:12
+#: single.php:17
 msgid "Previous Post"
 msgstr ""
 
-#: single.php:13
+#: single.php:18
 msgid "Next Post"
 msgstr ""
 
@@ -147,7 +147,11 @@ msgid "http://jour.dimme.nl"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "Full page template."
+msgid ""
+"Dimme jour is a simple and beautiful, bootstrap based, responsive "
+"multi-purpose theme. The theme supports a full page frontpage, custom "
+"header, carousel out of the box, and much more. Being SEO friendly and with "
+"mobile responsive design you can just start blogging."
 msgstr ""
 
 #. Author of the plugin/theme

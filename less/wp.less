@@ -17,12 +17,7 @@ body {
 
 #main {
   background: #FBFBFB;
-}
-
-.container {
-  .container {
-    width: auto;
-  }
+  padding-bottom: @footer-padding;
 }
 
 .navbar-spacer {
@@ -132,7 +127,6 @@ body {
 }
 
 #main > div > article {
-
   header {
     .link-without-style();
     .meta {
@@ -174,6 +168,19 @@ body {
   a {
     .label;
     .label-default;
+  }
+}
+
+.video-container {
+  .embed-responsive();
+  .embed-responsive-16by9();
+}
+
+.post {
+  margin-top: @grid-gutter-width / 2;
+  margin-bottom: @grid-gutter-width / 2;
+  &.sticky {
+    background-color: @table-bg;
   }
 }
 
@@ -317,9 +324,13 @@ body {
 }
 
 .tagcloud {
+  text-align: center;
   a {
     .label;
     .label-default;
+    line-height: auto;
+    display: inline-block;
+    margin: 2px 0;
   }
 }
 
@@ -335,9 +346,9 @@ body {
     }
     width: 100%;
     line-height: @line-height-large*2;
-    color: #FFF;
     a {
       display: block;
+      background-color: @table-bg-accent;
       &:hover {
         background: @color-concrete;
       }
@@ -378,11 +389,45 @@ body {
 
 .gallery {
   .make-row();
+  .clearfix();
   .gallery-item {
-    .make-xs-column(6);
-    .make-sm-column(4);
-    .make-md-column(3);
-    padding-bottom: 15px;
+    text-align: center;
+    .make-xs-column(3);
+    a {
+      display: block;
+      text-align: center;
+    }
+    img {
+      .img-responsive();
+      .img-thumbnail();
+      margin: 0 auto;
+    }
+  }
+  &.gallery-columns-1 {
+    .gallery-item {
+      .make-xs-column(12);
+    }
+  }
+  &.gallery-columns-2 {
+    .gallery-item {
+      .make-xs-column(6);
+    }
+  }
+  &.gallery-columns-3 {
+    .gallery-item {
+      .make-xs-column(4);
+    }
+  }
+  &.gallery-columns-4 {
+    .gallery-item {
+      .make-xs-column(3);
+    }
+  }
+  &.gallery-columns-5,
+  &.gallery-columns-6 {
+    .gallery-item {
+      .make-xs-column(2);
+    }
   }
 }
 
@@ -441,7 +486,7 @@ div.aligncenter {
 }
 
 .alignright {
-  float:right;
+  float: right;
   margin: 5px 0 20px 20px;
 }
 
@@ -472,6 +517,7 @@ a img.aligncenter {
 
 .wp-caption {
   .thumbnail();
+  clear: both;
 }
 
 .wp-caption.alignnone {

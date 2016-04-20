@@ -30,9 +30,9 @@ function dimme_jour_theme_support()
         'default-color' => '#595959',
     ));
     add_theme_support('title-tag');
-    add_theme_support('post-formats', array(
-        'aside'
-    ));
+//    add_theme_support('post-formats', array(
+//        'aside'
+//    ));
     register_nav_menus(
         array(
             'main_nav' => __('Main Menu', 'dimme-jour'),   // main nav in header
@@ -366,14 +366,18 @@ function dimme_jour_page_navi()
 {
     if (get_next_posts_link() || get_previous_posts_link()) {
         ?>
-        <div class="container">
-            <nav class="block">
-                <ul class="pager pager-unspaced">
-                    <li class="previous"><?php next_posts_link("&laquo; " . __('Older posts', "dimme-jour")); ?></li>
-                    <li class="next"><?php previous_posts_link(__('Newer posts', "dimme-jour") . " &rsquo;"); ?></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="block">
+            <ul class="pager pager-unspaced">
+                <li class="previous"><?php next_posts_link("&laquo; " . __('Older posts', "dimme-jour")); ?></li>
+                <li class="next"><?php previous_posts_link(__('Newer posts', "dimme-jour") . " &rsquo;"); ?></li>
+            </ul>
+        </nav>
         <?php
     }
+}
+
+add_filter('embed_oembed_html', 'my_embed_oembed_html', 99, 4);
+function my_embed_oembed_html($html, $url, $attr, $post_id)
+{
+    return '<div class="video-container">' . $html . '</div>';
 }

@@ -90,6 +90,10 @@ function wp_bootstrap_gallery($content, $attr)
         return;
     }
 
+    if(in_array($size, array("thumbnail", "medium"))) {
+        return;
+    }
+
     if (is_feed()) {
         $output = "\n";
         foreach ($attachments as $att_id => $attachment)

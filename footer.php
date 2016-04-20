@@ -1,3 +1,4 @@
+<br><br>
 <footer>
     <div id="inner-footer" class="vertical-nav">
         <div class="container">

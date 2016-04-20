@@ -2922,6 +2922,32 @@ a.thumbnail.active {
   padding: 9px;
   color: #666666;
 }
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
+.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+.embed-responsive-4by3 {
+  padding-bottom: 75%;
+}
 body {
   margin: 20px;
 }
@@ -2940,9 +2966,7 @@ body {
 }
 #main {
   background: #FBFBFB;
-}
-.container .container {
-  width: auto;
+  padding-bottom: 50px;
 }
 .navbar-spacer {
   height: 60px;
@@ -3225,6 +3249,34 @@ a.tags a:focus {
 .tags a[href]:hover,
 .tags a[href]:focus {
   background-color: #5e5e5e;
+}
+.video-container {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+}
+.video-container .embed-responsive-item,
+.video-container iframe,
+.video-container embed,
+.video-container object,
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
+.post {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.post.sticky {
+  background-color: #ffffff;
 }
 .commentlist {
   padding-left: 0;
@@ -3630,6 +3682,9 @@ fieldset[disabled] .comment-form input[type='submit'].focus {
 .widgettitle {
   margin-bottom: 9px;
 }
+.tagcloud {
+  text-align: center;
+}
 .tagcloud a {
   display: inline;
   padding: .2em .6em .3em;
@@ -3642,6 +3697,9 @@ fieldset[disabled] .comment-form input[type='submit'].focus {
   vertical-align: baseline;
   border-radius: .25em;
   background-color: #777777;
+  line-height: auto;
+  display: inline-block;
+  margin: 2px 0;
 }
 a.tagcloud a:hover,
 a.tagcloud a:focus {
@@ -3713,7 +3771,6 @@ a.tagcloud a:focus {
 .widget_calendar table {
   width: 100%;
   line-height: 2.6666666;
-  color: #FFF;
 }
 .widget_calendar table td,
 .widget_calendar table th {
@@ -3721,6 +3778,7 @@ a.tagcloud a:focus {
 }
 .widget_calendar table a {
   display: block;
+  background-color: #f9f9f9;
 }
 .widget_calendar table a:hover {
   background: #95a5a6;
@@ -3763,26 +3821,90 @@ a.tagcloud a:focus {
   margin-left: -15px;
   margin-right: -15px;
 }
+.gallery:before,
+.gallery:after {
+  content: " ";
+  display: table;
+}
+.gallery:after {
+  clear: both;
+}
+.gallery:before,
+.gallery:after {
+  content: " ";
+  display: table;
+}
+.gallery:after {
+  clear: both;
+}
 .gallery .gallery-item {
-  float: left;
-  width: 50%;
+  text-align: center;
   position: relative;
+  float: left;
+  width: 25%;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 15px;
 }
-@media (min-width: 768px) {
-  .gallery .gallery-item {
-    float: left;
-    width: 33.33333333%;
-  }
+.gallery .gallery-item a {
+  display: block;
+  text-align: center;
 }
-@media (min-width: 992px) {
-  .gallery .gallery-item {
-    float: left;
-    width: 25%;
-  }
+.gallery .gallery-item img {
+  display: block;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.gallery.gallery-columns-1 .gallery-item {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.gallery.gallery-columns-2 .gallery-item {
+  position: relative;
+  float: left;
+  width: 50%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.gallery.gallery-columns-3 .gallery-item {
+  position: relative;
+  float: left;
+  width: 33.33333333%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.gallery.gallery-columns-4 .gallery-item {
+  position: relative;
+  float: left;
+  width: 25%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.gallery.gallery-columns-5 .gallery-item,
+.gallery.gallery-columns-6 .gallery-item {
+  position: relative;
+  float: left;
+  width: 16.66666667%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /* a style used for all headers */
 .article-header {
@@ -3865,6 +3987,7 @@ a img.aligncenter {
   -webkit-transition: border 0.2s ease-in-out;
   -o-transition: border 0.2s ease-in-out;
   transition: border 0.2s ease-in-out;
+  clear: both;
 }
 .wp-caption > img,
 .wp-caption a > img {

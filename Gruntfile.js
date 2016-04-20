@@ -120,7 +120,7 @@ module.exports = function(grunt) {
 
 
   grunt.registerTask('make', ['less', 'uglify', 'copy:fonts', 'copy:js']);
-  grunt.registerTask('dist', ['make', 'compress']);
+  grunt.registerTask('dist', ['make', 'makepot', 'po2mo', 'compress']);
   grunt.registerTask('watcher', ['make', 'watch']);
 
   grunt.registerTask('default', ['watcher']);

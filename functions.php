@@ -29,10 +29,9 @@ function dimme_jour_theme_support()
     add_theme_support('custom-background', array(
         'default-color' => '#595959',
     ));
+
     add_theme_support('title-tag');
-//    add_theme_support('post-formats', array(
-//        'aside'
-//    ));
+
     register_nav_menus(
         array(
             'main_nav' => __('Main Menu', 'dimme-jour'),   // main nav in header
@@ -376,8 +375,35 @@ function dimme_jour_page_navi()
     }
 }
 
-add_filter('embed_oembed_html', 'my_embed_oembed_html', 99, 4);
-function my_embed_oembed_html($html, $url, $attr, $post_id)
+add_filter('embed_oembed_html', 'dimme_jour_embed_oembed_html', 99, 4);
+function dimme_jour_embed_oembed_html($html, $url, $attr, $post_id)
 {
-    return '<div class="video-container">' . $html . '</div>';
+    if(preg_match('/^<iframe/', $html)) {
+        return '<div class="video-container">' . $html . '</div>';
+    }
+    return $html;
 }
+
+function dimme_jour_link_pages_args($params)
+{
+    $args = array(
+        'before' => '<nav><ul class="pagination">',
+        'after' => '</ul></nav>',
+        'link_before' => '',
+        'link_after' => ''
+    );
+    return wp_parse_args($args, $params);
+}
+
+function dimme_jour_link_pages_link($link, $i)
+{
+    global $page;
+    if ($page === $i) {
+        return '<li class="active"><span>' . $link . '</span></li>';
+    } else {
+        return '<li>' . $link . '</li>';
+    }
+}
+
+add_filter('wp_link_pages_link', 'dimme_jour_link_pages_link', 99, 2);
+add_filter('wp_link_pages_args', 'dimme_jour_link_pages_args', 99, 2);

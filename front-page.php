@@ -31,7 +31,7 @@ $options = get_option('dimme_jour_options');
             if ($loop_the_loop) {
                 if (have_posts()) :
                     while (have_posts()) : the_post();
-                        get_template_part('content', get_post_format());
+                        get_template_part('content');
                     endwhile;
                     dimme_jour_page_navi();
                 else :

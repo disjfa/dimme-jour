@@ -3006,6 +3006,50 @@ body {
   position: relative;
   background-position: center center;
 }
+.post_content table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 22px;
+}
+.post_content table > thead > tr > th,
+.post_content table > tbody > tr > th,
+.post_content table > tfoot > tr > th,
+.post_content table > thead > tr > td,
+.post_content table > tbody > tr > td,
+.post_content table > tfoot > tr > td {
+  padding: 16px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+.post_content table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dddddd;
+}
+.post_content table > caption + thead > tr:first-child > th,
+.post_content table > colgroup + thead > tr:first-child > th,
+.post_content table > thead:first-child > tr:first-child > th,
+.post_content table > caption + thead > tr:first-child > td,
+.post_content table > colgroup + thead > tr:first-child > td,
+.post_content table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+.post_content table > tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+.post_content table .table {
+  background-color: #ffffff;
+}
+.post_content .wp-caption {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.post_content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .bg-white {
   background: #ffffff;
   color: inherit;

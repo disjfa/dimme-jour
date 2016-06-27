@@ -1,8 +1,5 @@
 (function ($) {
     $(document).ready(function () {
-        //------------------------------------//
-        //Navbar//
-        //------------------------------------//
         var navbar = $('.home .navbar');
         if (navbar.length > 0) {
             navbar.addClass('closed');

@@ -2976,14 +2976,22 @@ body {
   -webkit-box-shadow: 0 0 10px #333333;
   box-shadow: 0 0 10px #333333;
 }
+.navbar .custom-logo-link,
 .navbar .navbar-brand {
+  float: left;
   font-weight: bold;
   padding: 0 15px;
   color: #FFF;
   line-height: 60px;
 }
+.navbar .custom-logo-link img,
 .navbar .navbar-brand img {
   max-height: 60px;
+}
+@media (min-width: 992px) {
+  .navbar .custom-logo-link {
+    margin-left: -15px;
+  }
 }
 .navbar .navbar-nav > li > a {
   border-top: 4px solid transparent;
@@ -3963,7 +3971,7 @@ a.tagcloud a:focus {
 .pager-unspaced {
   margin: 0 0 6px 0;
 }
-/* empty styles to please wordpress theme checker */
+/* empty styles to please WordPress theme checker */
 .wp-caption {
   /**/
 }

@@ -27,7 +27,9 @@ body {
 .navbar {
   border: 0;
   .box-shadow(0 0 10px @gray-dark);
+  .custom-logo-link,
   .navbar-brand {
+    float: left;
     font-weight: bold;
     padding: 0 @navbar-padding-horizontal;
     color: #FFF;
@@ -36,6 +38,12 @@ body {
       max-height: @navbar-height;
     }
   }
+  @media (min-width: @screen-md-min) {
+    .custom-logo-link {
+      margin-left: -@navbar-padding-horizontal;
+    }
+  }
+
   .navbar-nav {
     > li {
       > a {
@@ -460,7 +468,7 @@ body {
   margin: 0 0 @padding-base-vertical 0;
 }
 
-/* empty styles to please wordpress theme checker */
+/* empty styles to please WordPress theme checker */
 
 .wp-caption { /**/
 }

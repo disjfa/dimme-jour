@@ -31,23 +31,22 @@ if (is_singular() && has_post_thumbnail()) {
             <div class="container">
                 <div class="navbar-header">
                     <?php if (has_nav_menu("main_nav")): ?>
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                data-target="#navbar-responsive-collapse">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-responsive-collapse">
                             <span class="sr-only"><?php _e('Navigation', 'dimme-jour'); ?></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
                     <?php endif ?>
-                    <a class="navbar-brand" title="<?php bloginfo('description'); ?>" href="<?php echo esc_url(home_url('/')); ?>">
-                        <?php if (isset($options['brand']) && false == empty($options['brand'])) : ?>
-                            <img src="<?php echo $options['brand'] ?>" alt="<?php echo get_bloginfo('name', 'raw'); ?>" title="<?php echo get_bloginfo('name', 'raw'); ?>">
-                        <?php else: ?>
-                            <?php echo get_bloginfo('name', 'raw'); ?>
-                        <?php endif; ?>
-                    </a>
-                </div>
 
+                    <?php if (has_custom_logo()) : ?>
+                        <?php the_custom_logo(); ?>
+                    <?php else: ?>
+                        <a class="navbar-brand" title="<?php bloginfo('description'); ?>" href="<?php echo esc_url(home_url('/')); ?>">
+                            <?php echo get_bloginfo('name', 'raw'); ?>
+                        </a>
+                    <?php endif; ?>
+                </div>
                 <?php if (has_nav_menu("main_nav")): ?>
                     <div id="navbar-responsive-collapse" class="collapse navbar-collapse">
                         <?php

@@ -14,8 +14,7 @@
                 </div>
             </div>
         </div>
-        <hr>
-
+        <br>
         <br>
     </div>
 </footer>

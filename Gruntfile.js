@@ -68,7 +68,7 @@ module.exports = function(grunt) {
     uglify: {
       dist: {
         files: {
-          'app.min.js': jsFiles,
+          'js/app.min.js': jsFiles,
         }
       }
     },
@@ -119,7 +119,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-po2mo');
 
 
-  grunt.registerTask('make', ['less', 'uglify', 'copy:fonts', 'copy:js']);
+  grunt.registerTask('make', ['less', 'copy:fonts', 'uglify']);
   grunt.registerTask('dist', ['make', 'makepot', 'po2mo', 'compress']);
   grunt.registerTask('watcher', ['make', 'watch']);
 

@@ -10,9 +10,11 @@ get_header(); ?>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <article id="post-<?php the_ID(); ?>" <?php post_class("block"); ?> role="article">
                 <header>
-                    <div class="article-header"><h1 itemprop="headline">
-                            <a href="<?php echo get_permalink($post->post_parent); ?>" rev="attachment"><?php echo esc_html(get_the_title($post->post_parent)); ?></a> &raquo; <?php the_title(); ?>
-                        </h1></div>
+                    <div class="article-header">
+                        <h1 itemprop="headline">
+                            <?php the_title(); ?>
+                        </h1>
+                    </div>
                     <?php dimme_jour_display_post_meta() ?>
                 </header>
                 <section class="post_content" itemprop="articleBody">

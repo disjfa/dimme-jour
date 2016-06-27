@@ -3,7 +3,7 @@
 /**
  * Class Name: wp_bootstrap_gallery
  * GitHub URI: https://github.com/twittem/wp-bootstrap-gallery
- * Description: A custom Wordpress gallery for dynamic thumbnail layout using Twitter Bootstrap 2 thumbnail layouts.
+ * Description: A custom WordPress gallery for dynamic thumbnail layout using Twitter Bootstrap 2 thumbnail layouts.
  * Version: 1.0
  * Author: Edward McIntyre - @twittem
  * License: GPL-2.0+

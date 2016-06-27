@@ -1,6 +1,4 @@
 <?php
-
-
 include('wp_bootstrap_carousel.php');
 
 function dimme_jour_admin_init()
@@ -23,13 +21,13 @@ function dimme_jour_theme_support()
         'gallery',
         'caption'
     ));
+    add_theme_support('custom-logo', array(
+        'width' => 90,
+        'height' => 60,
+    ));
     add_theme_support('post-thumbnails');      // wp thumbnails (sizes handled in functions.php)
     set_post_thumbnail_size(125, 125, true);   // default thumb size
     add_theme_support('automatic-feed-links'); // rss thingy
-    add_theme_support('custom-background', array(
-        'default-color' => '#595959',
-    ));
-
     add_theme_support('title-tag');
 
     register_nav_menus(
@@ -56,14 +54,6 @@ add_action('after_setup_theme', 'dimme_jour_theme_support');
  */
 function dimme_jour_customize_register($wp_customize)
 {
-//    $wp_customize->add_section(
-//        'layout_section', # Section ID to use in Option Table
-//        array(
-//            'title' => __('Layout', 'dimme-jour'), # Translatable text, change the text domain to your own
-//            'capability' => 'edit_theme_options', # Permission to change option date
-//            'description' => __('Allows you to edit your themes layout.', 'dimme-jour')
-//        )
-//    );
     /* @var $wp_customize WP_Customize_Manager */
     $wp_customize->add_setting('dimme_jour_options[logo]', array(
         'capability' => 'edit_theme_options',
@@ -83,12 +73,6 @@ function dimme_jour_customize_register($wp_customize)
         'sanitize_callback' => 'esc_url_raw',
     ));
 
-    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'brand', array(
-        'label' => __('Menu logo', 'dimme-jour'),
-        'section' => 'title_tagline',
-        'settings' => 'dimme_jour_options[brand]',
-    )));
-
 }
 
 add_action('customize_register', 'dimme_jour_customize_register');
@@ -102,7 +86,7 @@ function dimme_jour_theme_scripts()
     wp_register_style('wpbs-style', get_stylesheet_directory_uri() . '/style.css', array(), null, 'all');
     wp_enqueue_style('wpbs-style');
     wp_register_script('bower-libs',
-        get_template_directory_uri() . '/app.min.js',
+        get_template_directory_uri() . '/js/app.min.js',
         array('jquery'),
         null);
     wp_enqueue_script('bower-libs');
@@ -378,7 +362,7 @@ function dimme_jour_page_navi()
 add_filter('embed_oembed_html', 'dimme_jour_embed_oembed_html', 99, 4);
 function dimme_jour_embed_oembed_html($html, $url, $attr, $post_id)
 {
-    if(preg_match('/^<iframe/', $html)) {
+    if (preg_match('/^<iframe/', $html)) {
         return '<div class="video-container">' . $html . '</div>';
     }
     return $html;

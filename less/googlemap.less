@@ -1,0 +1,50 @@
+.googlemaps {
+  .googlemaps-map {
+    display: block;
+  }
+  .googlemaps-posts {
+    display: none;
+  }
+  &.googlemap-list {
+    .googlemaps-map {
+      display: none;
+    }
+    .googlemaps-posts {
+      display: block;
+    }
+  }
+  .googlemaps-buttons {
+    position: fixed;
+    right: @grid-gutter-width/2;
+    bottom: @grid-gutter-width/2;
+    z-index: 5;
+  }
+
+  @media screen and (min-width: @screen-md-min) {
+    .googlemaps-map {
+      display: block;
+      float: right;
+      width: 60%;
+    }
+
+    .googlemaps-posts {
+      display: block;
+      float: left;
+      width: 40%;
+    }
+
+    .googlemaps-buttons {
+      display: none;
+    }
+
+    &.googlemap-list {
+      .googlemaps-map {
+        display: block;
+      }
+
+      .googlemaps-posts {
+        display: block;
+      }
+    }
+  }
+}

@@ -14,7 +14,8 @@ get_header();
                         get_template_part('content');
                         comments_template('', true);
                     endwhile;
-                    dimme_jour_page_navi();
+                    
+                    the_post_navigation();
                 else :
                     get_template_part('content', 'none');
                 endif;

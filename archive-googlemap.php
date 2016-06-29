@@ -45,7 +45,8 @@ get_header();
                             while (have_posts()) : the_post();
                                 get_template_part('content');
                             endwhile;
-                            dimme_jour_page_navi();
+                            
+                            the_post_navigation();
                         else :
                             get_template_part('content', 'none');
                         endif;

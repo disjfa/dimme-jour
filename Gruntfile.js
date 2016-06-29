@@ -3,7 +3,6 @@
 module.exports = function(grunt) {
 
   var jsFiles = [
-    "bower_components/respond/dest/respond.src.js",
     "bower_components/html5shiv/dist/html5shiv.js",
     "bower_components/bootstrap/dist/js/bootstrap.js",
     "js/site-functions.js"

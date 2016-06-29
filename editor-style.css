@@ -2952,7 +2952,7 @@ body {
   margin: 20px;
 }
 /*
-    This file defines a lot of style necessary to make Wordpress work
+    This file defines a lot of style necessary to make WordPress work
     correctly.
 
     It is not recommended to edit it unless you know exactly what you
@@ -2967,6 +2967,7 @@ body {
 #main {
   background: #FBFBFB;
   padding-bottom: 50px;
+  position: relative;
 }
 .navbar-spacer {
   height: 60px;
@@ -2988,7 +2989,7 @@ body {
 .navbar .navbar-brand img {
   max-height: 60px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .navbar .custom-logo-link {
     margin-left: -15px;
   }
@@ -3271,6 +3272,36 @@ body {
 #main > div > article section .wp-video {
   margin-left: auto;
   margin-right: auto;
+}
+.nav-links:before,
+.nav-links:after {
+  content: " ";
+  display: table;
+}
+.nav-links:after {
+  clear: both;
+}
+.nav-links:before,
+.nav-links:after {
+  content: " ";
+  display: table;
+}
+.nav-links:after {
+  clear: both;
+}
+.nav-links .nav-next,
+.nav-links .nav-previous {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+.nav-links .nav-next {
+  float: right;
+}
+.nav-links .nav-previous {
+  float: left;
 }
 .tags a {
   display: inline;

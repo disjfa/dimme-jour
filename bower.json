@@ -1,6 +1,6 @@
 {
   "name": "dimme-jour",
-  "version": "0.0.0",
+  "version": "0.1.4",
   "homepage": "https://github.com/nicolas-van/wordpress-dimme-jour",
   "authors": [
     "Nicolas Vanhoren <nicolas.vanhoren@gmail.com>"
@@ -15,7 +15,6 @@
   ],
   "dependencies": {
     "bootstrap": "~3.3.6",
-    "respond": "~1.4.2",
     "html5shiv": "~3.7.2"
   }
 }

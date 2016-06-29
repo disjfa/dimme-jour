@@ -1,5 +1,5 @@
 /*
-    This file defines a lot of style necessary to make Wordpress work
+    This file defines a lot of style necessary to make WordPress work
     correctly.
 
     It is not recommended to edit it unless you know exactly what you
@@ -18,6 +18,7 @@ body {
 #main {
   background: #FBFBFB;
   padding-bottom: @footer-padding;
+  position: relative;
 }
 
 .navbar-spacer {
@@ -38,7 +39,7 @@ body {
       max-height: @navbar-height;
     }
   }
-  @media (min-width: @screen-md-min) {
+  @media (min-width: @screen-sm-min) {
     .custom-logo-link {
       margin-left: -@navbar-padding-horizontal;
     }
@@ -183,7 +184,24 @@ body {
     }
   }
 }
+.nav-links {
+  .clearfix();
 
+  .nav-next,
+  .nav-previous {
+    display: inline-block;
+    padding: 5px 14px;
+    background-color: @pager-bg;
+    border: 1px solid @pager-border;
+    border-radius: @pager-border-radius
+  }
+  .nav-next {
+    float: right;
+  }
+  .nav-previous {
+    float: left;
+  }
+}
 .tags {
   a {
     .label;

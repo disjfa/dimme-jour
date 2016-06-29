@@ -1,26 +1,63 @@
+=== Dimme jour ===
+Contributors: Casper Houde
+Requires at least: WordPress 4.4
+Tested up to: WordPress 4.6-trunk
+Version: 0.1.4
+License: MIT
+License URI: http://opensource.org/licenses/MIT
+Tags: blog, news, photography, one-column, two-columns, right-sidebar, custom-header, custom-menu, featured-image-header, featured-images, sticky-post, translation-ready, footer-widgets
 
-Simple Bootstrap is a basic Wordpress theme using Boostrap.
+== Description ==
 
-It is build to very clean, responsive and easy to modify. It supports customizable background and both left and right sidebars (the sidebars only appear if you put widgets in them).
+Dimme jour is a simple and beautiful, bootstrap based, responsive multi-purpose theme. The theme supports a full page frontpage, custom header, carousel out of the box, and much more. Being SEO friendly and with mobile responsive design you can just start blogging.
 
-Although it's not absolutely necessary it's recommended to edit the LESS files instead of directly editing the style.css . It will then be necessary to re-compile these files with the Gruntfile.js. Here are the lines you will have to type to do so (assuming you already have installed nodejs, bower and grunt-cli):
+For more information about Dimme jour please go to http://jour.dimme.nl
 
-npm install
-bower install
-grunt
+== Installation ==
 
-This theme was inspired by wp-bootstrap: https://github.com/320press/wordpress-bootstrap
+1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
+2. Type in Dimme jour in the search form and press the 'Enter' key on your keyboard.
+3. Click on the 'Activate' button to use your new theme right away.
+4. Go to http://jour.dimme.nl for a guide on how to customize this theme.
+5. Navigate to Appearance > Customize in your admin panel and customize to taste.
 
-Copyright 2016 Casper Houde
-Released under the terms of the MIT license.
+== Copyright ==
 
-Simple Boostrap is bundled with:
+Dimme jour WordPress Theme, Copyright 2016 dimme.nl
+Dimme jour is distributed under the terms of the MIT
 
-- Bootstrap (Copyright 2015 Twitter, released under the terms of the MIT license)
-- Respond.js (Copyright 2011: Scott Jehl, released under terms of the MIT license)
-- Html5shiv (Copyright Alexander Farkas, Jonathan Neal, Paul Irish and John-David Dalton, released under terms of the MIT license)
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-Images displayed in the screenshot:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-- After the Rain by Jarosław Puszczyński ( CC0 - https://tookapic.com/jpuszczynski/15186-after-the-rain )
-- SUP weekend by tania ( CC0 - https://tookapic.com/tania/15159-sup-weekend )
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Dimme jour Theme bundles the following third-party resources:
+
+Bootstrap 3.3.6, Copyright 2015 Twitter
+License: MIT
+Source: http://getbootstrap.com
+
+HTML5 Shiv v3.7.0, Copyright 2014 Alexander Farkas
+Licenses: MIT/GPL2
+Source: https://github.com/aFarkas/html5shiv
+
+wp_bootstrap_gallery, By Edward McIntyre - @twittem
+License: GPL2
+Source: https://github.com/twittem/wp-bootstrap-gallery
+
+Wp nav walker,
+Based upon wp-bootstrap-navwalker, By Edward McIntyre - @twittem
+License: GPL2
+Source: https://github.com/twittem/wp-bootstrap-navwalker
+
+Logo image, Copyright Pineapples
+License: CC0
+Source: https://unsplash.com/photos/t-W4_309hi8
+
+== Changelog ==
+
+= 0.1.4 =
+* Released: June 29, 2016
+
+Initial release

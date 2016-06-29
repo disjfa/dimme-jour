@@ -30,7 +30,7 @@ $options = get_option('dimme_jour_options');
                 while (have_posts()) : the_post();
                     get_template_part('content');
                 endwhile;
-                echo 'a';
+                
                 the_posts_navigation();
             else :
                 get_template_part('content', 'none');

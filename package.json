@@ -20,7 +20,7 @@
   },
   "scripts": {
     "clean": "npm cache clear; rimraf node_modules bower_components",
-    "build": "npm install; bower install",
+    "build": "npm install; bower install; grunt make",
     "watch": "grunt watcher",
     "prod": "grunt dist"
   },

@@ -4,8 +4,5 @@ Dimme jour is a beautiful, minimalist responsive theme. You can start creating c
  
 See our fully-setup live demo here: http://jour.dimme.nl
  
-<<<<<<< HEAD
 ![alt tag](https://github.com/disjfa/dimme-jour/blob/master/screenshot.png)
-=======
-![alt tag](https://github.com/disjfa/dimme-jour/blob/master/screenshot.png)
->>>>>>> origin/master
+

@@ -26,8 +26,7 @@ if (is_singular() && has_post_thumbnail()) {
 
 <div id="content-wrapper">
     <header<?php echo is_front_page() && display_header_text() ? ' class="is-front-page"' : ''; ?>>
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <?php if (is_admin_bar_showing()) echo '<div class="nav-show-admin-bar"></div>'; ?>
+        <nav class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
                     <?php if (has_nav_menu("main_nav")): ?>
@@ -63,10 +62,6 @@ if (is_singular() && has_post_thumbnail()) {
         <div class="post-header" style="background-image: url(<?php echo $header_image; ?>);">
 
         </div>
-    <?php else: ?>
-        <nav class="navbar-spacer">
-            &nbsp;
-        </nav>
     <?php endif; ?>
 
 

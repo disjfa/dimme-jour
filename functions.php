@@ -342,23 +342,6 @@ function dimme_jour_display_post_meta()
     <?php
 }
 
-/**
- *
- */
-function dimme_jour_page_navi()
-{
-    if (get_next_posts_link() || get_previous_posts_link()) {
-        ?>
-        <nav class="block">
-            <ul class="pager pager-unspaced">
-                <li class="previous"><?php next_posts_link("&laquo; " . __('Older posts', "dimme-jour")); ?></li>
-                <li class="next"><?php previous_posts_link(__('Newer posts', "dimme-jour") . " &rsquo;"); ?></li>
-            </ul>
-        </nav>
-        <?php
-    }
-}
-
 add_filter('embed_oembed_html', 'dimme_jour_embed_oembed_html', 99, 4);
 function dimme_jour_embed_oembed_html($html, $url, $attr, $post_id)
 {

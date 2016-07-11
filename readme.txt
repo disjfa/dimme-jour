@@ -2,7 +2,7 @@
 Contributors: Casper Houde
 Requires at least: WordPress 4.4
 Tested up to: WordPress 4.6-trunk
-Version: 0.1.4
+Version: 0.1.5
 License: MIT
 License URI: http://opensource.org/licenses/MIT
 Tags: blog, news, photography, one-column, two-columns, right-sidebar, custom-header, custom-menu, featured-image-header, featured-images, sticky-post, translation-ready, footer-widgets
@@ -56,6 +56,11 @@ License: CC0
 Source: https://unsplash.com/photos/t-W4_309hi8
 
 == Changelog ==
+
+= 0.1.5 =
+* Released: Juli 11, 2016
+
+Bumped version for upload
 
 = 0.1.4 =
 * Released: June 29, 2016

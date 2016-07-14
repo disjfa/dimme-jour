@@ -7947,6 +7947,8 @@ body.home .site-header {
   background-position: center center;
   position: relative;
 }
+html .post-header .site-header-body,
+body.home .post-header .site-header-body,
 html .site-header .site-header-body,
 body.home .site-header .site-header-body {
   position: absolute;
@@ -7958,32 +7960,62 @@ body.home .site-header .site-header-body {
   margin-left: -40%;
   width: 80%;
 }
+html .post-header .site-header-body h1,
+body.home .post-header .site-header-body h1,
 html .site-header .site-header-body h1,
 body.home .site-header .site-header-body h1 {
   color: #ecf0f1;
 }
+html .post-header .site-header-body img,
+body.home .post-header .site-header-body img,
 html .site-header .site-header-body img,
 body.home .site-header .site-header-body img {
   max-height: 100px;
   width: auto;
 }
 @media (min-width: 768px) {
+  html .post-header .site-header-body,
+  body.home .post-header .site-header-body,
   html .site-header .site-header-body,
   body.home .site-header .site-header-body {
     bottom: 180px;
     margin-left: -30%;
     width: 60%;
   }
+  html .post-header .site-header-body img,
+  body.home .post-header .site-header-body img,
   html .site-header .site-header-body img,
   body.home .site-header .site-header-body img {
     max-height: 180px;
   }
 }
 @media (min-width: 992px) {
+  html .post-header .site-header-body,
+  body.home .post-header .site-header-body,
   html .site-header .site-header-body,
   body.home .site-header .site-header-body {
     margin-left: -20%;
     width: 40%;
+  }
+}
+@media (max-width: 480px) {
+  html .post-header,
+  body.home .post-header {
+    padding-bottom: 35%;
+  }
+}
+html .post-header .site-header-body,
+body.home .post-header .site-header-body {
+  bottom: 3%;
+}
+@media (max-width: 480px) {
+  html .post-header .site-header-body,
+  body.home .post-header .site-header-body {
+    font-size: 1em;
+  }
+  html .post-header .site-header-body h1,
+  body.home .post-header .site-header-body h1 {
+    font-size: 1.4em;
   }
 }
 html.paged .site-header,

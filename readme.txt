@@ -57,6 +57,11 @@ Source: https://unsplash.com/photos/t-W4_309hi8
 
 == Changelog ==
 
+= 0.1.6 =
+* Released: Juli 11, 2016
+
+Added option for full page frontpage.
+
 = 0.1.5 =
 * Released: Juli 11, 2016
 

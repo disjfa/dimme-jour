@@ -50,11 +50,10 @@ function dimme_jour_theme_support()
 add_action('after_setup_theme', 'dimme_jour_theme_support');
 
 /**
- * @param $wp_customize
+ * @param WP_Customize_Manager $wp_customize
  */
 function dimme_jour_customize_register($wp_customize)
 {
-    /* @var $wp_customize WP_Customize_Manager */
     $wp_customize->add_setting('dimme_jour_options[logo]', array(
         'capability' => 'edit_theme_options',
         'type' => 'option',
@@ -67,12 +66,18 @@ function dimme_jour_customize_register($wp_customize)
         'settings' => 'dimme_jour_options[logo]',
     )));
 
-    $wp_customize->add_setting('dimme_jour_options[brand]', array(
+
+    $wp_customize->add_setting('dimme_jour_options[full_page_frontpage]', array(
         'capability' => 'edit_theme_options',
         'type' => 'option',
-        'sanitize_callback' => 'esc_url_raw',
     ));
 
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'full_page_frontpage', array(
+        'settings' => 'dimme_jour_options[full_page_frontpage]',
+        'label' => __('Show fullscreen frontpage', 'dimme-jour'),
+        'section' => 'title_tagline',
+        'type' => 'checkbox',
+    )));
 }
 
 add_action('customize_register', 'dimme_jour_customize_register');

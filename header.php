@@ -10,6 +10,9 @@
 </head>
 <?php
 $options = get_option('dimme_jour_options');
+$full_page_frontpage = isset($options['full_page_frontpage']) && (int)$options['full_page_frontpage'] === 1 ? true : false;
+$logo = empty($options['logo']) === false ? esc_url($options['logo']) : false;
+
 if (is_singular() && has_post_thumbnail()) {
     $image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'dimme_jour_featured', false);
     if ($image) {
@@ -17,6 +20,8 @@ if (is_singular() && has_post_thumbnail()) {
     } else {
         $header_image = false;
     }
+} elseif (is_front_page() && $full_page_frontpage === false && $logo) {
+    $header_image = $logo;
 } else {
     $header_image = get_header_image();
 }
@@ -57,10 +62,20 @@ if (is_singular() && has_post_thumbnail()) {
             </div>
         </nav>
     </header>
-    <?php if (is_front_page() && display_header_text()) : ?>
+    <?php if (is_front_page() && $full_page_frontpage) : ?>
+
     <?php elseif ($header_image): ?>
         <div class="post-header" style="background-image: url(<?php echo $header_image; ?>);">
-
+            <?php if (display_header_text()) : ?>
+                <div class="site-header-body">
+                    <h1>
+                        <?php echo get_bloginfo('name', 'display') ?>
+                    </h1>
+                    <p>
+                        <?php echo get_bloginfo('description', 'display') ?>
+                    </p>
+                </div>
+            <?php endif; ?>
         </div>
     <?php endif; ?>
 

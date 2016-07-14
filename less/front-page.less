@@ -17,7 +17,9 @@ html, body.home {
     background-size: cover;
     background-position: center center;
     position: relative;
-
+  }
+  .post-header,
+  .site-header {
     .site-header-body {
       h1 {
         color: @body-bg;
@@ -48,7 +50,20 @@ html, body.home {
       }
     }
   }
-
+  .post-header {
+    @media (max-width: @screen-xs-min) {
+      padding-bottom: 35%;
+    }
+    .site-header-body {
+      bottom: 3%;
+      @media (max-width: @screen-xs-min) {
+        font-size: 1em;
+        h1 {
+          font-size: 1.4em;
+        }
+      }
+    }
+  }
   /* when posts are the front page */
   &.paged {
     .site-header {

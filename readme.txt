@@ -2,7 +2,7 @@
 Contributors: Casper Houde
 Requires at least: WordPress 4.4
 Tested up to: WordPress 4.6-trunk
-Version: 0.1.5
+Version: 0.1.6
 License: MIT
 License URI: http://opensource.org/licenses/MIT
 Tags: blog, news, photography, one-column, two-columns, right-sidebar, custom-header, custom-menu, featured-image-header, featured-images, sticky-post, translation-ready, footer-widgets
@@ -62,7 +62,7 @@ Source: https://unsplash.com/photos/t-W4_309hi8
 
 Added option for full page frontpage.
 
-= 0.1.5 =
+= 0.1.6 =
 * Released: Juli 11, 2016
 
 Bumped version for upload

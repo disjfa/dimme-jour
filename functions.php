@@ -66,10 +66,10 @@ function dimme_jour_customize_register($wp_customize)
         'settings' => 'dimme_jour_options[logo]',
     )));
 
-
     $wp_customize->add_setting('dimme_jour_options[full_page_frontpage]', array(
         'capability' => 'edit_theme_options',
         'type' => 'option',
+        'sanitize_callback' => 'esc_html',
     ));
 
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'full_page_frontpage', array(

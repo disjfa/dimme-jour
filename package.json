@@ -1,6 +1,6 @@
 {
   "name": "dimme-jour",
-  "version": "0.0.0",
+  "version": "0.1.7",
   "description": "Basic WordPress theme using Boostrap. Built to be very clean.",
   "main": "Gruntfile.js",
   "dependencies": {

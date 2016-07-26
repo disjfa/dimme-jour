@@ -3,7 +3,7 @@ Theme Name: Dimme jour
 Description: Dimme jour is a simple and beautiful, bootstrap based, responsive multi-purpose theme. The theme supports a full page frontpage, custom header, carousel out of the box, and much more. Being SEO friendly and with mobile responsive design you can just start blogging.
 Author: Casper Houde
 Author URI: http://disjfa.nl
-Version: 0.1.6
+Version: 0.1.7
 Text Domain: dimme-jour
 Theme URI: http://jour.dimme.nl
 License: MIT
@@ -15,8 +15,8 @@ Licensed under the MIT license.
 In collaboration with isset - http://isset.nl
 */
 /*!
- * Bootstrap v3.3.6 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -1111,7 +1111,6 @@ a:focus {
   text-decoration: underline;
 }
 a:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -2543,7 +2542,6 @@ select[size] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -3034,7 +3032,6 @@ select[multiple].input-lg {
 .btn.focus,
 .btn:active.focus,
 .btn.active.focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -7455,7 +7452,6 @@ textarea.comment-form .comment-form-comment textarea {
 .comment-form input[type='submit'].focus,
 .comment-form input[type='submit']:active.focus,
 .comment-form input[type='submit'].active.focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }

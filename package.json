@@ -26,11 +26,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/nicolas-van/wordpress-simple-boostrap.git"
+    "url": "git@github.com:disjfa/dimme-jour.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nicolas-van/wordpress-simple-boostrap/issues"
+    "url": "https://github.com/disjfa/dimme-jour/issues"
   }
 }

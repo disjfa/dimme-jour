@@ -54,11 +54,6 @@ msgstr ""
 msgid "No posts found."
 msgstr "Aucun article trouvé."
 
-#: footer.php:29
-#, fuzzy
-msgid "Design by <a href=\"http://isset.nl/\">isset</a>"
-msgstr "Design par <a href=\"https://github.com/nicolas-van\">@nicolas-van</a>"
-
 #: footer.php:33
 msgid "Powered by WordPress"
 msgstr "Propulsé par Wordpress"

@@ -1,9 +1,9 @@
 {
   "name": "dimme-jour",
   "version": "0.1.7",
-  "homepage": "https://github.com/nicolas-van/wordpress-dimme-jour",
+  "homepage": "https://github.com/disjfa/dimme-jour",
   "authors": [
-    "Nicolas Vanhoren <nicolas.vanhoren@gmail.com>"
+    "Disjfa <disjfa@disjfa.nl>"
   ],
   "license": "MIT",
   "ignore": [

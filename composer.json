@@ -1,0 +1,22 @@
+{
+    "name": "disjfa/dimme-jour",
+    "description": "Wordpress template",
+    "type": "wordpress-theme",
+    "license": "MIT",
+    "homepage": "https://github.com/disjfa/dimme-jour",
+    "authors": [
+        {
+            "name": "disjfa",
+            "email": "disjfa@disjfa.nl"
+        }
+    ],
+    "keywords": [
+        "wordpress"
+    ],
+    "support": {
+        "issues": "https://github.com/disjfa/dimme-jour/issues"
+    },
+    "require": {
+        "composer/installers": "^1.5"
+    }
+}
